@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/me.png" alt="" class="profile-pic"></a>
+            <h1>Portfolio</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#internships">Stages</a></li>
+                </ul>
+                <div class="hamburger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <ul class="nav-links hidden">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#internships">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <img src="assets/me.png" alt="" class="profile-aboutme-pic">
+            <p>Un bref résumé de moi.</p>
+            <p>
+                Voici
+                <a href="assets/CV Alexandre Moreau.pdf" target="_blank">Mon CV</a>
+            </p>
+            
+            <h3>Compétences</h3>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="assets/Csharp-logo.png" alt="" class="skill-image">
+                    <p>C#</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/java-logo.png" alt="" class="skill-image">
+                    <p>Java</p>
+                </div>
+            </div>
+            
+            <h3>Soft Skills</h3>
+            <div class="soft-skills-container">
+                <div class="soft-skill">
+                    <img src="assets/logique.png" alt="" class="skill-image">
+                    <p>Esprit logique</p>
+                </div>
+                <div class="soft-skill">
+                    <img src="assets/autonomie.png" alt="" class="skill-image">
+                    <p>Autonomie</p>
+                </div>
+            </div>
+            
+            <h3>Passions</h3>
+            <div class="passions-container">
+                <div class="passion">
+                    <img src="assets/passion-jv.png" alt="" class="skill-image">
+                    <p>Jeux vidéo</p>
+                </div>
+                <div class="passion">
+                    <img src="assets/passion-livre.png" alt="" class="skill-image">
+                    <p>Lecture</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="project">
+                <div class="project-card">
+                    <img src="assets/LogoStephanePlagiat.png" alt="" class="project-pic">
+                    <a href="Project/LeaseManager.html"><h3>Gestion de Baux</h3></a>
+                    <p>Description du projet</p>
+                    <div class="labels">
+                        <span class="label">C#</span>
+                        <span class="label">WPF</span>
+                        <span class="label">SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/SpectreLumineux.png" alt="" class="project-pic">
+                    <a href="Project/MultispectralSimulator.html"><h3>Simulateur d'image à partir d'image multispectrale</h3></a>
+                    <p>Description du projet</p>
+                    <div class="labels">
+                        <span class="label">Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="internships">
+            <h2>Mes Stages</h2>
+            <div class="internship">
+                <div class="internship-card">
+                    <img src="assets/AkkodisLogo.png" alt="" class="internship-pic">
+                    <a href="Internship/Akodis.html"><h3>Akkodis Blagnac</h3></a>
+                    <p>Description du stage</p>
+                    <div class="labels">
+                        <span class="label">C#</span>
+                        <span class="label">Autonomie</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mentions légales et autres informations.</p>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
