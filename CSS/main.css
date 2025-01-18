@@ -105,4 +105,17 @@ h3 {
 }
 
 
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #004494;
+}
+
 
