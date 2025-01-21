@@ -5,25 +5,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
 
     hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active'); // Ajoute ou enlève la classe active
-        navLinksHidden.classList.toggle('active'); // Affiche ou cache la liste cachée
+        navLinks.classList.toggle('active');
+        navLinksHidden.classList.toggle('active'); 
     });
 
-    // Ajout d'un gestionnaire d'événements pour fermer le menu lors du clic sur un lien
-    const links = document.querySelectorAll('.nav-links.hidden a'); // Sélectionne tous les liens dans la liste cachée
+    
+    const links = document.querySelectorAll('.nav-links.hidden a'); 
     links.forEach(link => {
         link.addEventListener('click', function() {
-            navLinks.classList.remove('active'); // Ferme le menu
-            navLinksHidden.classList.remove('active'); // Ferme la liste cachée
+            navLinks.classList.remove('active'); 
+            navLinksHidden.classList.remove('active'); 
         });
     });
 
-    // Gestion du défilement pour rendre le header fixe
     window.addEventListener('scroll', function() {
         if (window.scrollY > 0) {
-            header.classList.add('fixed'); // Ajoute la classe fixed lorsque l'utilisateur fait défiler
+            header.classList.add('fixed'); 
         } else {
-            header.classList.remove('fixed'); // Retire la classe fixed lorsque l'utilisateur est en haut
+            header.classList.remove('fixed'); 
         }
     });
 });
